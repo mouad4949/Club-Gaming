@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="on and off" content="allumer une lampe">
+        <meta charset="UTF-8"> 
+        <title>test</title>
+       <link rel="stylesheet" href="file.css">
+    </head>
+    <body>
+        <h1>pour tester HTML & JS</h1>
+        <p>demonstration</p>
+        <button onclick="myfunction(1)">cliquez ici pour changer le contenue</button>
+        <button onclick="myfunction(0)">cliquez ici pour returner le contenue</button>
+        <p id="iden">le contenue va changer</p>
+        <script>
+            function myfunction(arg){
+                var par,cl,TT,BG;
+                if(arg==0){
+                    par="le contenur va changer";
+                    cl="white";
+                    TT="lowercase";
+                    BG="black";
+                }
+                else{
+                    par="LSI MQEWDIIIIN";
+                    cl="red";
+                    BG="yellow";
+                    TT="uppercase";
+                }
+                document.getElementById("iden").innerHTML=par;
+                document.getElementById("iden").style.color=cl;
+                document.getElementById("iden").style.backgroundColor=BG;
+                document.getElementId("iden").style.textTransform=TT;
+            }
+        </script>
+        <hr>
+        <h1>TEST POUR ALLUMER UNE LUMIERE EN JS & HTML</h1>
+        <p>on va essayer d'allumer cete lampe</p>
+        <img id="myimg" src="IMAGE/pic_bulboff.png.webp"width="100" height="150" style="margin:70px">
+        <br>
+        <button onclick="allumer(1)">cliquez pour allumer la lampe</button>
+        <button onclick="allumer(0)">cliquez pour etteindre la lampe</button>
+        <script>
+            function allumer(a){
+                var pic,BC,TX,col;
+                if(a==0){
+                    pic="IMAGE/pic_bulboff.png.webp";
+                }
+                else{
+                    pic="IMAGE/pic1.gif";
+                    BC="white";
+                }
+                document.getElementById("myimg").src=pic;
+                document.getElementById("myimg").style.BackgroundColor=BC;
+            }
+        </script>
+    </body>
+</html>

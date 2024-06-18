@@ -1,0 +1,18 @@
+body{
+    background-color:black;
+        color:red;
+}
+h1{
+    text-align: center;
+    color:white;
+}
+p{
+    color:white;
+}
+button{
+    border-color:white;
+    color:black;
+    font-size: 10px;
+    font-weight: bolder;
+    text-transform: uppercase;
+}

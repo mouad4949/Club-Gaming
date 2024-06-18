@@ -1,2 +1,2 @@
 # adminhub
-Website ini merupakan hasil slicing dari Figma ke responsive website menggunakan HTML, CSS, dan JavaScript
+Website pour la gestion d'un club de gaming au sein d'une faculté.
